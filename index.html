@@ -3,47 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Kevin Valiansa — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-        </ul>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <span class="nav-logo">KV</span>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+            </ul>
+            <a href="#portfolio" class="nav-cta">Lihat Karya</a>
+        </div>
     </nav>
 
-    <!-- Halaman Utama -->
+    <!-- Hero -->
     <section id="home">
-        <img src="images/profil.jpg" alt="Foto Profil" class="profile-pic">
-        <h1>Kevin valiansa</h1>
-        <p>Beginner | Mahasiswa</p>
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="grain"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">✦ Open to Learn</div>
+            <h1 class="reveal delay-1">Kevin<br><em>Valiansa</em></h1>
+            <p class="hero-sub reveal delay-2">Beginner Developer &amp; Mahasiswa<br>yang antusias menjelajahi dunia web.</p>
+            <div class="profile-wrap reveal delay-3">
+                <div class="profile-ring"></div>
+                <img src="profile.png" alt="Foto Profil Kevin" class="profile-pic" id="profileImg">
+            </div>
+            <div class="hero-scroll reveal delay-4">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Tentang Saya -->
     <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Saya seorang pemula yang sedang belajar dan menjelajahi dunia pemrograman. Saya memiliki minat dalam pengembangan web dan terus berusaha meningkatkan keterampilan saya setiap hari. Dengan semangat belajar dan tekad yang kuat, saya siap menghadapi tantangan baru dan mengembangkan proyek yang bermanfaat.</p>
+        <div class="section-inner">
+            <div class="about-label reveal">— Tentang Saya</div>
+            <div class="about-grid">
+                <div class="about-left reveal delay-1">
+                    <h2>Kevin Valiansa<br><em>Informatika</em></h2>
+                </div>
+                <div class="about-right reveal delay-2">
+                    <p>Halo! Saya seorang pemula yang sedang belajar dan menjelajahi dunia pemrograman. Saya memiliki minat dalam pengembangan web dan terus berusaha meningkatkan keterampilan setiap hari.</p>
+                    <p>Dengan semangat belajar dan tekad yang kuat, saya siap menghadapi tantangan baru dan mengembangkan proyek yang bermanfaat.</p>
+                    <div class="about-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-<!-- Portofolio -->
-<section id="portfolio">
-    <h2>Portofolio</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="images/sertif1.png" alt="Sertifikat 1">
-            <p>Sertifikat 1</p>
+    <!-- Portofolio -->
+    <section id="portfolio">
+        <div class="section-inner">
+            <div class="portfolio-header reveal">
+                <div class="about-label">— Portofolio</div>
+                <h2>Projek &amp;<br><em>Karya Saya</em></h2>
+            </div>
+            <div class="grid reveal delay-1">
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="tes5.png" alt="Market Crypto">
+                        <div class="card-overlay">
+                            <span>Lihat</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Market Crypto</p>
+                        <span class="card-tag">2026</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="tes8.png" alt="Data Mahasiswa">
+                        <div class="card-overlay">
+                            <span>Lihat</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Data Mahasiswa</p>
+                        <span class="card-tag">2026</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <img src="images/sertif2.png" alt="Sertifikat 2">
-            <p>Sertifikat 2</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <span class="nav-logo">KV</span>
+            <p>© 2026 Kevin Valiansa</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modalClose" aria-label="Tutup">✕</button>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Preview">
         </div>
     </div>
-</section>
 
     <script src="script.js"></script>
 </body>
